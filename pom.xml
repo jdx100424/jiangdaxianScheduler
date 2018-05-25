@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>jiangdaxianScheduler</groupId>
+	<artifactId>jiangdaxianScheduler</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>jiangdaxianScheduler-webapp</module>
+		<module>jiangdaxianScheduler-scheduler</module>
+	</modules>
+	
+	<properties>
+        <elastic-job-lite-core.version>2.1.0</elastic-job-lite-core.version>
+        <elastic-job-lite-spring.version>2.1.0</elastic-job-lite-spring.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+		    <groupId>com.dangdang</groupId>
+		    <artifactId>elastic-job-lite-spring</artifactId>
+		    <version>${elastic-job-lite-spring.version}</version>
+		</dependency>		
+		<dependency>
+		    <groupId>com.dangdang</groupId>
+		    <artifactId>elastic-job-lite-core</artifactId>
+		    <version>${elastic-job-lite-core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>jiangdaxian_component_common</groupId>
+			<artifactId>jiangdaxian_component_common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
